@@ -1,10 +1,10 @@
 pipeline {
-  agent any
-  stages {
-    stage(‘Built’) {
-      steps {
-        sh ‘tidy -q -e /home/ubuntu/test.html’
-      }
+  agent any 
+  stages { stage('Build') {
+    stage('Build') {
+    steps {
+      sh 'echo "Hello World"'
+     }
     }
   }
 }
