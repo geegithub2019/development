@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage(‘Built’) {
       steps {
-        sh ‘tidy -q -e /home/ubuntu/*.html’
+        sh ‘tidy -q -e /home/ubuntu/test.html’
       }
     }
   }
