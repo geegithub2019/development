@@ -1,7 +1,7 @@
 pipeline {
   agent any
   stages {
-    stage(‘Lint HTML’) {
+    stage(‘Built’) {
       steps {
         sh ‘tidy -q -e /home/ubuntu/*.html’
       }
